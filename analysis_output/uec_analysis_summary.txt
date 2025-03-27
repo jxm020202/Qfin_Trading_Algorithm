@@ -1,0 +1,17 @@
+UEC Extended Dataset Analysis Summary
+===================================
+
+1. Price and Volatility Profile
+   - Average Price: $105.45
+   - Price Range: $86.63 to $121.87
+   - Average Volatility (20-day): 0.1321
+   - Average Daily Return: 0.0003%
+   - Return Volatility: 0.0705%
+
+2. Strategy Performance
+   - Mean Reversion: $0.00 (0 trades)
+   - Breakout: $12.98 (2 trades)
+   - MA Crossover: $-1408.86 (2040 trades)
+
+3. Best Parameters per Strategy
+   - Mean Reversion: Window=30, Threshold=0.025 (PnL: $-878.66)
