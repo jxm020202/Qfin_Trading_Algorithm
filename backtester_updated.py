@@ -12,7 +12,7 @@ import pandas as pd
 #import strategy_momentum as template
 
 # To use the hybrid UEC optimized strategy:
-import basic as template
+import main as template
 
 from copy import deepcopy
 from datetime import datetime
@@ -20,7 +20,7 @@ from datetime import datetime
 DATA_LOCATION = "Data" # Set this to the location of your data folder
 
 # List of stock names (without .csv)
-products = ["UEC_expanded"] # This list determiens the stocks your algorithm will be backtested on
+products = ["UEC", "SOBER"] # This list determiens the stocks your algorithm will be backtested on
 
 # Dictionary to store the price series dataframes for each stock
 price_series = {} # In the form {"ABC": Dataframe, ...}
@@ -159,15 +159,7 @@ for product in products:
     print(f"Number of sell trades: {len(sell_trades)}")
     
     # Print detailed trade history
-    print("\nDetailed Trade History:")
-    for trade in trade_history[product]:
-        trade_type = trade['type']
-        if trade_type in ['BUY', 'CLOSING_BUY']:
-            print(f"Timestamp {trade['timestamp']}: {trade_type} {trade['quantity']} units @ {trade['price']:.2f} (Cost: {trade['cost']:.2f})")
-        else:
-            print(f"Timestamp {trade['timestamp']}: {trade_type} {trade['quantity']} units @ {trade['price']:.2f} (Revenue: {trade['revenue']:.2f})")
-        if 'position_after' in trade:
-            print(f"Position after trade: {trade['position_after']}")
+    
 
 # Output final PnL
 print(f"\nTotal PnL across all products = {cash_sum}")

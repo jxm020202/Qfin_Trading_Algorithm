@@ -1,0 +1,26 @@
+Asset Analysis Summary
+=====================
+
+UEC Summary:
+-----------------
+Price Range: $86.63 to $121.87
+Average Price: $105.45
+Average Daily Return: 0.0003%
+Return Volatility: 0.0705%
+Average 20-day Volatility: 0.1321
+
+SOBER Summary:
+-----------------
+Price Range: $9.08 to $648.47
+Average Price: $141.02
+Average Daily Return: -0.0084%
+Return Volatility: 0.1420%
+Average 20-day Volatility: 0.2933
+
+
+Comparison Notes:
+-----------------
+• These plots provide a visual comparison of UEC and SOBER characteristics.
+• The parameter sensitivity heatmaps are examples using synthetically generated values.
+• For UEC, lower thresholds appear optimal for mean reversion strategies.
+• For SOBER, higher thresholds are required due to its higher volatility.

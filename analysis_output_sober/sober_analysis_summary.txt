@@ -1,0 +1,27 @@
+SOBER Extended Dataset Analysis Summary
+======================================
+
+1. Price and Volatility Profile
+   - Average Price: $141.02
+   - Price Range: $9.08 to $648.47
+   - Average Volatility (20-day): 0.2933
+   - Average Daily Return: -0.0084%
+   - Return Volatility: 0.1420%
+   - Skewness: 0.2087 (positively skewed)
+   - Kurtosis: 35.2209 (leptokurtic)
+
+2. Strategy Performance
+   - Mean Reversion: $-580.78 (36 trades)
+   - Momentum: $-2359.22 (852 trades)
+   - Breakout: $-2400.25 (538 trades)
+
+3. Best Parameters per Strategy
+   - Mean Reversion: Window=10, Threshold=0.5 (PnL: $-144.43)
+   - Momentum: Window=15, Threshold=1.0 (PnL: $-167.83)
+   - Breakout: Lookback=5 (PnL: $-1522.78)
+
+4. Key Findings
+   - Best Strategy: Mean Reversion ($-580.78)
+   - SOBER shows high volatility
+   - Mean Reversion strategy works poorly for SOBER
+   - Price has strongest correlation with SMA5 (1.0000)
